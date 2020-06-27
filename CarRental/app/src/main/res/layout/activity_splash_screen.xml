@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/imageView_splashLogo"
+        android:layout_width="339dp"
+        android:layout_height="299dp"
+        android:src="@drawable/main_logo"
+        android:layout_gravity="center"/>
+
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:indeterminateDrawable="@drawable/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>

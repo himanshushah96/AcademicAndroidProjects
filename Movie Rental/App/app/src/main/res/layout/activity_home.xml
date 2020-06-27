@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/home_logo"
+        android:src="@drawable/ic_movie"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="30sp"
+        android:id="@+id/home_headline"
+        android:layout_below="@+id/home_logo"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/loginBackGround"
+        android:text="Welcome to\nthe all new\nMovie Rental App"
+        />
+
+    <TextView
+        android:layout_below="@+id/home_headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/loginBackGround"
+        android:text="Plan your movie with us!"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/home_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/login_button_corner_radius"
+            android:textColor="@color/white"
+            android:text="Login"/>
+
+        <Button
+            android:id="@+id/home_button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_button_corner_radius"
+            android:textColor="@color/white"
+            android:text="SignUp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

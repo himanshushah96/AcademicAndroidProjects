@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    card_view:cardElevation="10dp"
+    android:divider="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView_movieImage"
+            android:scaleType="centerCrop"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/imageview_logo"/>
+
+<!--
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView_movieName"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView_movieImage"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_movieReleaseYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_movieName"
+            android:layout_marginLeft="18dp"
+            android:text="Year Released"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />-->
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

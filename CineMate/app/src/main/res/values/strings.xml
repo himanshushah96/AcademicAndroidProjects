@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CineMate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name="api_base_url">http://172.26.222.109/api/</string>-->
+    <!--    <string name="host">http://172.26.222.109</string>-->
+
+    <string name="api_base_url">http://176.26.222.126/api/</string>
+    <string name="host">http://176.26.222.126</string>
+
+
+</resources>

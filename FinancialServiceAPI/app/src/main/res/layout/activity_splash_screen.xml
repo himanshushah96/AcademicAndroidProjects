@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+
+
+    <ImageView
+        android:id="@+id/imageView_splashLogo"
+        android:layout_width="339dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/splashscreenlogo"
+        android:layout_marginHorizontal="35dp"/>
+
+    <ProgressBar
+        android:layout_marginTop="20dp"
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/imageView_splashLogo"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/loader" />
+
+
+</RelativeLayout>

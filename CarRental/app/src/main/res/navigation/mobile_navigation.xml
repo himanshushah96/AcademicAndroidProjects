@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="a.m.carrental.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="a.m.carrental.ui.orders.OrdersFragment"
+        android:label="Orders"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_cars"
+        android:name="a.m.carrental.ui.cars.CarsFragment"
+        android:label="Cars"
+        tools:layout="@layout/fragment_cars" />
+
+    <fragment
+        android:id="@+id/nav_customers"
+        android:name="a.m.carrental.ui.customers.CustomerFragment"
+        android:label="Customers"
+        tools:layout="@layout/fragment_customer" />
+
+</navigation>

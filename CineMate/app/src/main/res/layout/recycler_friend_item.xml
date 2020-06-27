@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardElevation="8dp"
+    card_view:cardElevation="10dp"
+    android:divider="@android:color/transparent"
+    app:cardCornerRadius="10dp"
+    android:paddingBottom="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageView_friendImage" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView_friendName"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/Purple700"
+            android:layout_toRightOf="@id/imageView_friendImage"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_friendAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView_friendImage"
+            android:layout_below="@id/textView_friendName"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:text="Age"
+            android:textColor="@color/Purple700"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_friendGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_friendAge"
+            android:layout_centerVertical="true"
+            android:text="Gender"
+            android:textColor="@color/Purple700"
+            android:layout_toRightOf="@id/imageView_friendImage"
+            android:textSize="15sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+             />
+
+
+        <TextView
+            android:id="@+id/textView_friendPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_friendGender"
+            android:layout_centerVertical="true"
+            android:text="Phone"
+            android:textColor="@color/Purple700"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imageView_friendImage"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

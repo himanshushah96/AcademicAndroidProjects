@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MovieDetailFragment">
+
+        <TextView
+            android:id="@+id/textView_intro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Movie Details"
+            android:textColor="@color/Purple700"
+            android:textSize="35dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView_intro2">
+
+
+            <ImageView
+                android:id="@+id/imageView_movieImageDetail"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/imageview_logo"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                />
+
+
+            <TextView
+                android:id="@+id/textView_movieNameDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView_movieImageDetail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_movieReleaseYearDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_movieNameDetail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Year Released"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_movieRatings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_movieReleaseYearDetail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="Ratings"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView_movieRuntime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_movieRatings"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Year Released"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/textView_movieDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_movieRuntime"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:scrollbars="vertical"
+                android:justificationMode="inter_word"
+                android:text="Description"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button_bookmovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_movieDescription"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_background"
+                android:text="Book Movie"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

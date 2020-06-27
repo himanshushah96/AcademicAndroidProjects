@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/textView_MainWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/textView_MainMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice to see you again!"
+        android:alpha="0.5"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/textView_MainWelcome"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/button_MainLogin"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/textView_MainMessage"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/whiteColor"/>
+    <Button
+        android:id="@+id/button_MainSignUp"
+        android:layout_width="162dp"
+        android:layout_height="52dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/button_MainLogin"
+        android:text="SignUp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/whiteColor"/>
+
+</RelativeLayout>

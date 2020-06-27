@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context=".CarDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutscroll"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearlayout_buttonCarDetail"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView_car"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_height="200dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativeLayout_carDetail">
+
+
+
+                <TextView
+                    android:id="@+id/textView_description_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_car"
+                    android:layout_marginTop="20dp"
+                    android:text="Description :"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView_description_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_description_label"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tableLayout_carDetails"
+                    android:layout_below="@+id/textView_description_value"
+                    android:stretchColumns="1">
+
+                    // Model
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/textView_modelName_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Model:"
+                            android:gravity="right"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView_modelName_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp" />
+
+                    </TableRow>
+
+                    //Brand
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/textView_brandName_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Brand:"
+                            android:gravity="right"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView_brandName_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </TableRow>
+
+                    //CarType
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/textView_carType_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Car Type:"
+                            android:gravity="right"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView_CarType_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp" />
+                    </TableRow>
+
+                    //Price
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/textView_price_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Price:"
+                            android:gravity="right"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView_price_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/textView_date_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="right"
+                            android:text="Available Date:"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/textView_date_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout_buttonCarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/button_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Book"
+            android:textSize="15dp"
+            android:textColor="@color/whiteColor"
+            android:background="@drawable/button"
+            />
+        <Button
+            android:id="@+id/button_Reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reserve"
+            android:textSize="15dp"
+            android:textColor="@color/whiteColor"
+            android:background="@drawable/button"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonColor"
+        android:text="Cancel"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        android:textColor="@color/whiteColor"
+        android:layout_alignParentBottom="true"
+
+
+        />
+
+</RelativeLayout>

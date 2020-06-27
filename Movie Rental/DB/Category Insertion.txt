@@ -1,0 +1,1 @@
+insert into category (categoryName) values ('Action'),('Comedy'),('Drama'),('Education'),('SCI-FI'),('Sports');

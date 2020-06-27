@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/dialog_fName"
+        android:hint="Enter First Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:textColorHint="@color/blackColor"/>
+
+    <EditText
+        android:id="@+id/dialog_lName"
+        android:hint="Enter Last Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_fName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textColorHint="@color/blackColor"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/dialog_emailId"
+        android:hint="Enter Email-id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_lName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textColorHint="@color/blackColor"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

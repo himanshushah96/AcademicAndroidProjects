@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking details"
+        android:textColor="@color/Purple700"
+        android:textSize="25dp"
+        android:id="@+id/textviewconfirm2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/imageView_movieImageConfirm"
+            android:src="@drawable/imageview_logo"
+            android:layout_below="@+id/textviewconfirm2" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView_movieNameConfirm"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_below="@id/imageView_movieImageConfirm"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView_mateNameConfirm"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_below="@id/textView_movieNameConfirm"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book another Movie"
+            android:id="@+id/button_bookAnother"
+            android:background="@drawable/button_background"
+            android:layout_below="@id/textView_mateNameConfirm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+</FrameLayout>

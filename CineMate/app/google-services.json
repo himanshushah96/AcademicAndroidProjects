@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "467623425188",
+    "firebase_url": "https://cinemate-f3155.firebaseio.com",
+    "project_id": "cinemate-f3155",
+    "storage_bucket": "cinemate-f3155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467623425188:android:bd69490359cacfe2ace231",
+        "android_client_info": {
+          "package_name": "com.example.cinemate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467623425188-otd4i59l7vveck0gurj3995i2oj4mu1l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cinemate",
+            "certificate_hash": "f86b54a7f66be9ead0a51e1818808c26148988e4"
+          }
+        },
+        {
+          "client_id": "467623425188-gu16h8tdrc3f4th29qv8ckpbv4j9cef6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmudiB91HrDZYTO-drbSc_HLHna69mCOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467623425188-gu16h8tdrc3f4th29qv8ckpbv4j9cef6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
